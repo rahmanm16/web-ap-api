@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>V&A Museum Collection</title>
+    <meta name="description" content="Search V&A Museum Collection">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./js/index.js"></script>
+    <link rel="preload" href="css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+
+<body>
+    <div id="main-content">
+        <h1 id="unique-title">Search the V&A Museum Collection</h1>
+        <form id="searchForm">
+            <label for="searchInput" class="visually-hidden"> Search the V&A Museum Collection</label>
+            <input type="text" id="searchInput" aria-live="polite" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+        <p id="resultsCount" style="display: none;" aria-live="polite"></p>
+    </div>
+    <div id="results-container"></div>
+    <div id="lightboxModal" class="modal">
+        <span class="close">&times;</span>
+        <!-- Modal src and alt obtained from api, still gives error -->
+        <img src="" alt="" class="modal-content" id="lightboxImg">
+        <div id="caption"></div>
+    </div>
+    <div id="bg"></div>
+    <div id="results">
+    </div>
+    <footer id="copyright1">
+        <div class="copyright">
+            <p>&copy; V&A's image licensing service grants reproduction rights to use images of the V&A's extensive and
+                varied collections</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
